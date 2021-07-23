@@ -1,0 +1,19 @@
+{
+	email yOUR Email
+}
+
+YOURDOMAINE {
+    #tls internal
+    log {
+      output stdout
+    }
+    reverse_proxy IP:PORT
+}
+
+YOURSECONDDOMAINE {
+    log {
+      output stdout 
+    }
+    reverse_proxy IP:PORT
+}	
+

@@ -1,0 +1,22 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://IP:9090 # This needs to be replaced by your server's ip
+    jsonData:
+      httpmethod: POST
+      exemplarTraceIdDestinations:
+              - name: vpsmetrics
+                url: https://IP/metrics
+    editable: true
+
+  - name: mariadb #Or other 
+    isDefault: true
+    type: mysql
+    url: IP:PORT
+    database: 
+    user: 
+    secureJsonData:
+      password: 
