@@ -20,7 +20,7 @@ docker-install.sh
 ```
 
 ## Deployment and evolution of the stack
-Depuis le repertoire de la stack: 
+From the stack directory: 
 ```ruby
 git clone https://github.com/
 cd Monitoring
