@@ -98,7 +98,7 @@ datasources:
 ##### Firewall config with iptables
 Remove access to port 9090,9100,3000 from http
 You have to add the following rules in DOCKER-USER : 
-````ruby
+```ruby
 sudo iptables -I DOCKER-USER -p tcp -i eth0 ! -s IP --dport 3000 -j DROP
 sudo iptables -I DOCKER-USER -p tcp -i eth0 ! -s IP --dport 9100 -j DROP
 sudo iptables -I DOCKER-USER -p tcp -i eth0 ! -s IP --dport 9090 -j DROP
