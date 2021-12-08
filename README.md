@@ -107,4 +107,12 @@ sudo iptables -I DOCKER-USER -p tcp -i eth0 ! -s IP --dport 9090 -j DROP
 ```ruby
 sudo apt install iptables-persistent
 ``` 
-
+```docker
+#Useful docker commands
+docker-compose logs caddy
+docker-compose up -d
+docker volume ls 
+docker volume rm 'volume name'
+docker-compose up -d --build --force-recreate
+docker network ls
+```
